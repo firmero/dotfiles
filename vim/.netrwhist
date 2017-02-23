@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/common/vs/Projects/mlaskal/public-ro/icm/src'
+let g:netrw_dirhist_2='/home/roman/notes'
+let g:netrw_dirhist_3='/home/roman/Intlab_V9'
+let g:netrw_dirhist_4='/home/roman/Intlab_V9/intval'
+let g:netrw_dirhist_5='/home/roman/Intlab_V9'
+let g:netrw_dirhist_6='/home/roman/Intlab_V9/intval'
+let g:netrw_dirhist_7='/home/roman/Intlab_V9/intval/@intval'
+let g:netrw_dirhist_8='/home/roman/Intlab_V9/intval'

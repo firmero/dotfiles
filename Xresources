@@ -1,0 +1,91 @@
+
+! Comments begin with a "!" character.
+!
+
+!==========================================================
+!URxvt.loginShell: true
+URxvt.geometry: 155x47
+!URxvt.geometry: 130x40
+URxvt*saveLines: 65535
+URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
+
+URxvt.foreground: rgb:f8/f8/f2
+URxvt.background: rgb:1e/1f/29
+
+URxvt.color0: rgb:00/00/00
+URxvt.color1: rgb:ff/55/55
+URxvt.color2: rgb:50/fa/7b
+
+URxvt.color3: rgb:f1/fa/8c
+URxvt.color4: rgb:bd/93/f9
+URxvt.color5: rgb:ff/79/c6
+
+URxvt.color6: rgb:8b/e9/fd
+URxvt.color7: rgb:bb/bb/bb
+URxvt.color8: rgb:55/55/55
+
+URxvt.color9: rgb:ff/55/55
+URxvt.color10: rgb:50/fa/7b
+URxvt.color11: rgb:f1/fa/8c
+
+URxvt.color12: rgb:bd/93/f9
+URxvt.color13: rgb:ff/79/c6
+URxvt.color14: rgb:8b/e9/fd
+
+URxvt.color15: rgb:ff/ff/ff
+!URxvt.colorBD: rgb:fc/fc/fc
+URxvt.font: xft:Mono:size=11
+!URxvt.font: xft:Mono:size=10
+!URxvt.font: xft:Mono:size=11
+URxvt.scrollBar: false
+URxvt.visualBell: false
+! % of fade
+URxvt.fading: 15	
+URxvt.letterSpace: -1.5
+
+
+
+
+! matcher urls..
+! URxvt.perl-ext-common: default,matcher,resize-font,fullscreen,clipboard
+URxvt.perl-ext-common: default,resize-font,fullscreen,clipboard
+
+URxvt.matcher.button: 1
+
+!alt-enter
+URxvt.keysym.M-Return: perl:fullscreen:switch
+
+! use xev to find out keysym, keybind
+URxvt.resize-font.smaller: C-0x2d
+URxvt.resize-font.bigger: C-0x3d
+
+URxvt.url-launcher:        /usr/bin/chromium
+
+! clipboard======================
+!URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
+!URxvt.keysym.C-n: perl:clipboard:paste_escaped
+
+! Options:
+URxvt.clipboard.autocopy: true
+!If true, PRIMARY overwrites clipboard
+
+! You can also overwrite the system commands to use for copying/pasting.
+! The default ones are:
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+! If you prefer xclip, then put these lines in your .Xdefaults/.Xresources:
+!   URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+!   URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+
+! end clipboard ==================
+
+
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+URxvt.cursorColor: 2
+URxvt*cursorBlink: true
+
+!URxvt.matcher.rend.0: white
+
