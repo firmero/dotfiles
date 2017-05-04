@@ -1,0 +1,84 @@
+[custom-keybindings/custom0]
+binding=['<Super>b']
+command='/home/roman/.scripts/bar_hide.sh'
+name='Bar Hide '
+
+[custom-keybindings/custom1]
+binding=['<Super>2']
+command='chromium --incognito'
+name='chrome shade'
+
+[custom-keybindings/custom2]
+binding=['<Super>4']
+command='chromium'
+name='chrome '
+
+[custom-keybindings/custom3]
+binding=['<Super>3']
+command='firefox'
+name='firefox'
+
+[custom-keybindings/custom4]
+binding=['<Primary><Alt>End']
+command='reboot'
+name='reboot'
+
+[custom-keybindings/custom5]
+binding=['<Primary><Shift>Escape']
+command='gnome-system-monitor'
+name='sys monitor'
+
+[custom-keybindings/custom10]
+binding=['MonBrightnessUp']
+command='xbacklight -inc 3'
+name='brightness inc'
+
+[custom-keybindings/custom6]
+binding=['<Primary><Alt>t']
+command='/home/roman/.scripts/launch_terminal.sh'
+name='urxvt tmux'
+
+[custom-keybindings/custom7]
+binding=['<Alt>F2']
+command='/home/roman/.scripts/hdmi_bright_up.sh'
+name='hdmi +bright'
+
+[custom-keybindings/custom8]
+binding=['<Alt>F1']
+command='/home/roman/.scripts/hdmi_bright_down.sh'
+name='hdmi -bright'
+
+[custom-keybindings/custom9]
+binding=['MonBrightnessDown']
+command='xbacklight -dec 3'
+name='brightness dec'
+
+[/]
+looking-glass-keybinding=@as []
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom8', 'custom9', 'custom10']
+
+[media-keys]
+screenshot-clip=@as []
+next=['XF86AudioNext', '<Alt>F10', '<Super>F10']
+screen-brightness-down=@as []
+play=['XF86AudioPlay', '<Super>F8', '<Alt>F8']
+screenshot=['<Primary>Print']
+logout=@as []
+terminal=@as []
+volume-down=['XF86AudioLowerVolume', '<Super>F11', '<Alt>F11']
+screen-brightness-up=@as []
+volume-up=['XF86AudioRaiseVolume', '<Super>F12', '<Alt>F12']
+shutdown=['<Primary><Alt>Delete', 'XF86PowerOff']
+home=['<Super>e']
+screensaver=['<Super>l', 'XF86ScreenSaver']
+previous=['XF86AudioPrev', '<Super>F9', '<Alt>F9']
+suspend=['XF86Sleep']
+
+[wm]
+panel-run-dialog=@as []
+minimize=['<Super>m']
+switch-windows-backward=['<Shift>Tab']
+begin-resize=@as []
+switch-to-workspace-down=['<Control><Alt>Down', '<Super>Tab']
+switch-to-workspace-up=['<Control><Alt>Up']
+toggle-maximized=@as []

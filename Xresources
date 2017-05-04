@@ -2,6 +2,23 @@
 ! Comments begin with a "!" character.
 !
 
+XTerm*background:         black
+XTerm*foreground:         white
+XTerm*cursorColor:        white
+XTerm*VT100.geometry:     140x40
+
+XTerm*dynamicColors:      true
+XTerm*utf8:               2
+XTerm*eightBitInput:      true
+XTerm*saveLines:          65535
+XTerm*scrollKey:          true
+XTerm*scrollTtyOutput:    false
+XTerm*scrollBar:          true
+XTerm*rightScrollBar:     true
+XTerm*jumpScroll:         true
+XTerm*multiScroll:        true
+XTerm*toolBar:            false
+
 !==========================================================
 !URxvt.loginShell: true
 URxvt.geometry: 155x47
@@ -10,7 +27,10 @@ URxvt*saveLines: 65535
 URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
 
 URxvt.foreground: rgb:f8/f8/f2
-URxvt.background: rgb:1e/1f/29
+URxvt.background: rgb:13/13/13
+!URxvt.background: rgb:20/20/20
+!URxvt.background: rgb:1e/1f/29
+
 
 URxvt.color0: rgb:00/00/00
 URxvt.color1: rgb:ff/55/55
@@ -84,8 +104,12 @@ URxvt.clipboard.pastecmd: xsel -ob
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
+
+
+!pink
 URxvt.cursorColor: 2
 URxvt*cursorBlink: true
+
 
 !URxvt.matcher.rend.0: white
 

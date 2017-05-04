@@ -159,8 +159,23 @@ nmap <F12>  :pclose<CR>:LocationList<CR><c-w>k
 "!!!!!! change ppty
 "set makeprg=make\ >/dev/pts/2\ 2>&1
 
-set makeprg=make\ >/dev/pts/2\ 2>&1
-nmap <F5> :!printf "\033c" >/dev/pts/2<cr>:silent make! &<cr>:redraw!<cr>
+"set makeprg=make\ >/dev/pts/2\ 2>&1
+"nmap <F5> :!printf "\033c" >/dev/pts/2<cr>:silent make! &<cr>:redraw!<cr>
+
+
+" LaTex
+function Writeandcompile()
+ wa 
+ silent make! &
+ redraw!
+endfunction
+
+set makeprg=make\ >/dev/null\ 2>&1
+nmap <F5> :call Writeandcompile() <cr>
+
+"autocmd InsertLeave *.tex call Writeandcompile()
+" end latex
+
 
 
 nmap <F6> :w <cr>:!printf "\033C\e[01;32m[RUN `date +\"\%H:\%M:\%S\"` ]\n\e[0m" >/dev/pts/2<cr>:silent !./a.out in.mls - >/dev/pts/2<cr>

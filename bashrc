@@ -1,4 +1,4 @@
-#
+
 # ~/.bashrc
 #
 
@@ -11,6 +11,7 @@ export EDITOR="vim"
 
 
 complete -cf sudo
+complete -cf man
 
 
 #alias grep='GREP_COLOR="1;31" grep --color '   pre vlastnu farbu
@@ -28,7 +29,9 @@ alias sudo='sudo '
 alias youtube-viewer='youtube-viewer -C'
 alias less='less -r'	#raw colors accepts
 
-LS_COLORS=$LS_COLORS:'ow=0;35:' #35
+
+# other writable. dir. exe.
+LS_COLORS=$LS_COLORS:'ow=0;35:di=1;34:ex=0;32:ln=1;36:'
 export LS_COLORS
 
 # shortening of paths displayed in prompts 
@@ -52,8 +55,11 @@ man() {
 
 alias l='ls -lhtr --color=auto'
 alias u='~/upd.sh'
-alias s='speed-test'
-alias w='curl wttr.in/Prague'
+alias s='speed-test --verbose'
+alias w='curl "wttr.in/Praha?M?0&lang=sk"'
+alias ww='curl "wttr.in/Praha?M?1&lang=sk"'
+alias www='curl "wttr.in/Praha?M&lang=sk"'
+
 
 alias mutt='OLD_path=`pwd`; cd ~/Downloads; mutt; cd $OLD_path'
 
@@ -66,4 +72,19 @@ alias less='less -R '
 
 alias r=ranger
 alias m=mutt
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# ruby
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+
+
+alias octave='octave-cli'
+alias kinit='kinit TODO prihlasovacie meno'
+
+# disable Software Flow Control (XON/XOFF flow control)
+stty -ixon
 
