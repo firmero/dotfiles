@@ -29,8 +29,8 @@ command='gnome-system-monitor'
 name='sys monitor'
 
 [custom-keybindings/custom10]
-binding=['MonBrightnessUp']
-command='xbacklight -inc 3'
+binding=['<Primary>MonBrightnessUp']
+command='xbacklight -inc 1'
 name='brightness inc'
 
 [custom-keybindings/custom6]
@@ -49,8 +49,8 @@ command='/home/roman/.scripts/hdmi_bright_down.sh'
 name='hdmi -bright'
 
 [custom-keybindings/custom9]
-binding=['MonBrightnessDown']
-command='xbacklight -dec 3'
+binding=['<Primary>MonBrightnessDown']
+command='xbacklight -dec 1'
 name='brightness dec'
 
 [/]
@@ -60,17 +60,21 @@ custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', '
 [media-keys]
 screenshot-clip=@as []
 next=['XF86AudioNext', '<Alt>F10', '<Super>F10']
-screen-brightness-down=@as []
+screen-brightness-down=['MonBrightnessDown']
+area-screenshot-clip=['<Control><Shift>Print', '<Primary><Shift>Menu']
 play=['XF86AudioPlay', '<Super>F8', '<Alt>F8']
-screenshot=['<Primary>Print']
+screenshot=['<Primary>Print', '<Primary>Menu']
 logout=@as []
 terminal=@as []
 volume-down=['XF86AudioLowerVolume', '<Super>F11', '<Alt>F11']
-screen-brightness-up=@as []
+screen-brightness-up=['MonBrightnessUp']
+window-screenshot-clip=['<Control><Alt>Print']
 volume-up=['XF86AudioRaiseVolume', '<Super>F12', '<Alt>F12']
+window-screenshot=['<Shift>Menu', '<Shift>Menu']
 shutdown=['<Primary><Alt>Delete', 'XF86PowerOff']
 home=['<Super>e']
 screensaver=['<Super>l', 'XF86ScreenSaver']
+area-screenshot=['<Shift>Print']
 previous=['XF86AudioPrev', '<Super>F9', '<Alt>F9']
 suspend=['XF86Sleep']
 
